@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+.ouline-none {
+    outline: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pointer {
+    cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.font-size-h1 {
+    font-size: 70px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.fs-10 {
+    font-size: 13px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.bg-img {
+    background-image: url("https://images.ctfassets.net/rxqefefl3t5b/6I2vL9f0IVsDQ8qFgdrxH7/7660c4bab3116a4a04025d5c4802efa5/Virgin-Red-online-shopping-offers.jpg");
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.btn-shopping,
+.btn-cart {
+    border: 5px solid;
+    padding: 20px;
+    width: 40%;
+    background-color: white;
+    margin-inline: 2.5%;
+}
+
+.btn-shopping {
+    border-image: linear-gradient(to top right, rgb(0, 139, 137), rgb(204, 50, 186)) 1;
+}
+
+.btn-shopping:hover {
+    background: linear-gradient(to top right, rgb(0, 139, 137), rgb(204, 50, 186));
+    border: none;
+    padding: 25px;
+    color: white;
+}
+
+.btn-cart {
+    border-image: linear-gradient(to top right, rgb(26, 169, 78), rgb(60, 42, 161)) 1;
+}
+
+.btn-cart:hover {
+    background: linear-gradient(to top right, rgb(26, 169, 78), rgb(60, 42, 161));
+    border: none;
+    padding: 25px;
+    color: white;
+}
+
+.w-md {
+    width: 50px;
+    margin-right: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+    .font-size-h1 {
+        font-size: 100px;
+    }
+
+    .fs-10 {
+        font-size: 15px;
+    }
 }
