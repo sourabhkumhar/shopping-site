@@ -76,7 +76,7 @@ export default function Cart() {
 
                         <hr />
                         <div className="row text-center mb-4">
-                            <h5 className='col-6'>Discount Percentage</h5>
+                            <h5 className='col-6'>Total</h5>
                             <span className='col-6'>${total.toFixed(2)}</span>
                         </div>
 
