@@ -8,7 +8,7 @@ export default function Navbar() {
     
     return (
         <div>
-            <nav className="navbar bg-black navbar-dark py-3 shadow-lg">
+            <nav className="navbar bg-black navbar-dark py-3 px-1 shadow-lg">
                 <div className="container-fluid">
                     <Link className="navbar-brand pointer" to="/"><img src={process.env.PUBLIC_URL + "/images/logo.svg"} width="30px" alt="" /></Link>
 
