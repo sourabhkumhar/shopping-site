@@ -73,7 +73,7 @@ const ProdState = (props) => {
     }
 
     return (
-        <productsAPI.Provider value={{ products, category, cart, getProducts, getCategories, loaded, setLoaded, addToCart, removeFromCart }}>
+        <productsAPI.Provider value={{ products, category, cart, getProducts, getCategories, loaded, setLoaded, addToCart, removeFromCart, setCart }}>
             {props.children}
         </productsAPI.Provider>
     )

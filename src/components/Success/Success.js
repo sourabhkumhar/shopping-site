@@ -1,7 +1,15 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import productsAPI from '../../context/products/productsAPI'
 
 export default function Success() {
+    const context = useContext(productsAPI)
+    const {setCart} = context;
+
+    useEffect(() => {
+        setCart([])
+    }, [])
+
     return (
         <div className='text-center py-5'>
             <h1 className='font-size-h1'>Thank You!!!</h1>

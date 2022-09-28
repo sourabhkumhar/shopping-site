@@ -120,7 +120,7 @@ export default function ProductLists() {
 
 
             <div className={`${proceed ? '' : 'd-none'} position-fixed bottom-0 end-0 m-3`}>
-                <Link to="/cart"><button className='btn btn-primary px-5 py-3'>Proceed</button></Link>
+                <Link to="/cart"><button className='btn btn-primary px-5 py-3'>Proceed({cart.length})</button></Link>
             </div>
         </>
     )
